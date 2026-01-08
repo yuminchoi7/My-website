@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>계산기 portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <head>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div class="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat" style="background-image: url('https://i.pinimg.com/736x/c8/9e/39/c89e39cb5b0fee34e992b157c59409fd.jpg');">
+  
+  <header class="sticky top-0 z-50 border-b border-white/20 bg-white/20 backdrop-blur-md shadow-sm">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-4 p-4">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-full bg-gray-300 ring-2 ring-white/50 overflow-hidden">
+          <img src="https://via.placeholder.com/150" alt="Profile" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <p class="font-bold text-gray-200">최유민 Yumin Choi</p>
+          <p class="text-xs text-gray-300 font-medium">한림대학교 의학과 1학년</p>
+        </div>
+      </div>
+      <nav class="flex items-center gap-6">
+        <a class="text-sm font-medium text-gray-200 hover:text-[#1e2480] transition-colors" href="home.html">Home</a>
+        <a class="text-sm font-medium text-gray-200 hover:text-[#1e2480] transition-colors" href="about.html">About</a>
+        <a class="text-sm font-medium text-gray-200 hover:text-[#1e2480] transition-colors" href="portfolios.html">Portfolios</a>
+        <a class="text-sm font-medium text-gray-200 hover:text-[#1e2480] transition-colors" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow flex items-center justify-center p-3 sm:p-6">
+    
+    <div class="wrap w-full max-w-[420px]">
+      <div class="bg-white/30 backdrop-blur-lg rounded-xl shadow-2xl border border-white/40 p-4 sm:p-5">
+        
+        <h5 class="text-center mb-4 text-lg sm:text-xl font-semibold text-white drop-shadow-md">
+          Calculator (Tailwind)
+        </h5>
+
+        <input id="display" type="text" class="w-full text-right text-2xl sm:text-3xl px-4 py-3 mb-4 rounded-lg border border-white/30 bg-white/70 text-gray-900 placeholder-gray-500 font-bold focus:outline-none focus:bg-white/80 transition-all" value="0" readonly />
+        
+        <div class="keys grid grid-cols-4 gap-3">
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="7">7</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="8">8</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="9">9</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-blue-500/40 text-lg font-medium text-white hover:bg-blue-500/60 transition-all active:scale-95" data-key="÷">÷</button>
+
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="4">4</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="5">5</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="6">6</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-blue-500/40 text-lg font-medium text-white hover:bg-blue-500/60 transition-all active:scale-95" data-key="×">×</button>
+
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="1">1</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="2">2</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="3">3</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-blue-500/40 text-lg font-medium text-white hover:bg-blue-500/60 transition-all active:scale-95" data-key="-">-</button>
+
+          <button class="wide col-span-2 h-12 rounded-lg border border-white/30 bg-white/40 text-lg font-medium text-white hover:bg-white/60 transition-all active:scale-95" data-key="0">0</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-red-400/60 text-lg font-bold text-white hover:bg-red-500/70 shadow-lg transition-all active:scale-95" data-key="C">C</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-green-400/60 text-lg font-bold text-white hover:bg-green-500/70 shadow-lg transition-all active:scale-95" data-key="=">=</button>
+          <button class="h-12 rounded-lg border border-white/30 bg-blue-500/40 text-lg font-medium text-white hover:bg-blue-500/60 transition-all active:scale-95" data-key="+">+</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+    <script src='https://cdn.tailwindcss.com'></script><script  src="./script.js"></script>
+
+  </body>
+  
+</html>

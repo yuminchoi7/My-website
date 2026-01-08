@@ -1,0 +1,12 @@
+.wrap { text-align: center; }
+#display { width: 320px; height: 44px; text-align: right; font-size: 22px; }
+
+.keys{
+  width: 330px;
+  margin: 10px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+.keys button{ height: 46px; font-size: 18px; }
+.wide{ grid-column: span 2; }
