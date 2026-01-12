@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact page_1차 </title>
+    
+
+  </head>
+    
+  <body>
+  <head>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div class="min-h-screen bg-[url(https://i.pinimg.com/736x/3f/f5/e5/3ff5e55c9fe1c7be98f8b59c7415f16d.jpg)] bg-cover bg-center text-gray-800 font-sans selection:bg-indigo-500 selection:text-white">
+    <header class="sticky top-0 z-50 border-b border-white/20 bg-white/20 backdrop-blur-md shadow-sm">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-4 p-4">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-full bg-gray-300 ring-2 ring-white/50 overflow-hidden"> 
+          <img src="" alt="Profile" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <p class="font-bold text-gray-900">최유민 Yumin Choi</p>
+          <p class="text-xs text-gray-700 font-medium">한림대학교 의학과 1학년</p>
+        </div>
+      </div>
+      
+      <nav class="flex items-center gap-6">
+        <a class="text-sm font-medium text-gray-800 hover:text-[#1e2480] transition-colors" href="home.html">Home</a>
+        <a class="text-sm font-medium text-gray-800 hover:text-[#1e2480] transition-colors" href="about.html">About</a>
+        <a class="text-sm font-medium text-gray-800 hover:text-[#1e2480] transition-colors" href="portfolio.html">Portfolio</a>
+        <a class="text-sm font-medium text-gray-800 hover:text-[#1e2480] transition-colors" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section id="contact" class="max-w-5xl mx-auto mt-8 mb-20 px-3">
+    <div class="border border-white/40 rounded-3xl bg-white/60 backdrop-blur-xl shadow-2xl p-8 md:p-10 hover:bg-white/50">
+      
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-gray-900 mb-1">Contact</h1>
+        <p class="text-gray-600 text-sm">문의사항 있을 시 메일주세요.</p>
+      </div>
+
+      <form class="space-y-6">
+        <div>
+          <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="you@example.com" 
+            class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1e2480] focus:border-transparent transition shadow-sm placeholder-gray-400">
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+          <textarea 
+            id="message" 
+            rows="4" 
+            placeholder="메시지를 입력하세요" 
+            class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1e2480] focus:border-transparent transition shadow-sm placeholder-gray-400 resize-none"
+          ></textarea>
+        </div>
+
+        <button 
+          type="button" 
+          class="w-full bg-[#374151] hover:bg-[#1f2937] text-white font-bold py-3.5 px-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+          Send
+        </button>
+      </form>
+
+    </div>
+  </section>
+   <footer class="text-center py-6 text-gray-600 text-xs">
+    &copy; 2025 Yumin Choi. All rights reserved.
+  </footer>
+</div>
+    <script src='https://cdn.tailwindcss.com'></script>
+  </body>
+  
+</html>
